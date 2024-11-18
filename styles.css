@@ -34,7 +34,7 @@ h2, h3 {
 .card, .gallery, .thank-you-section {
     text-align: center;
     max-width: 600px;
-    width: 90%; /* Adjust width for mobile */
+    width: 90%;
 }
 
 button {
@@ -53,26 +53,28 @@ button:hover {
     background: #e91e63;
 }
 
-.gallery {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery-item {
-    max-width: 250px;
-    text-align: center;
+#playMusicButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
 }
 
 .image-container img,
 .gallery img {
     border-radius: 15px;
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    max-width: 300px;
 }
 
-/* Thank You Section Styling */
+/* Center the Gallery Items */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .thank-you-section {
     margin-top: 20px;
     padding: 20px;
@@ -81,50 +83,16 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.thank-you-section p {
-    margin: 10px 0;
-}
-
-.thank-you-section strong {
-    font-size: 1.2em;
-    color: #e91e63;
-}
-
-/* Responsive Styles for Mobile Devices */
+/* Mobile Responsive Styles */
 @media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1.3em;
-    }
-
     .image-container img,
     .gallery img {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        max-width: 200px;
     }
 
     .gallery {
         flex-direction: column;
-        gap: 15px;
-    }
-
-    .gallery-item {
-        max-width: 150px;
-    }
-
-    button {
-        font-size: 0.9em;
-        padding: 8px 16px;
-    }
-
-    .thank-you-section {
-        padding: 15px;
-    }
-
-    .thank-you-section p {
-        font-size: 0.9em;
+        align-items: center;
     }
 }
