@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubhi's 4th Birthday Invitation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="main-container">
+
+    <!-- Page 1: Invitation -->
+    <section id="page1" class="page">
+        <div class="card">
+            <h1 class="title">🎉 You're Invited! 🎉</h1>
+            <h2>Celebrating the <span>4th Birthday</span> of Our Little Star <strong>Shubhi</strong>!</h2>
+            <div class="image-container ">
+                <img src="./img/img2.JPG" alt="Birthday Girl Shubhi">
+            </div>
+            <p class="message">Join us for a magical celebration filled with fun, games, and surprises!</p>
+            <div class="invitation-details">
+                <p><strong>Date:</strong> November 24, 2024</p>
+                <p><strong>Time:</strong> 7:00 PM - 9:00 PM</p>
+                <p><strong>Venue:</strong> 302 Avadh Palace Ceramic City Morbi Gujrat</p>
+            </div>
+            <button onclick="scrollToSection('page2')">See Family Photos & Message</button>
+        </div>
+    </section>
+
+    <!-- Page 2: Family Photos and Thank You Message -->
+    <section id="page2" class="page">
+        <h2>Moments with Family</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./img/with MOM.jpeg" alt="Shubhi with Mom">
+                <p>Shubhi with Her Mommy 💖</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/with Dad.jpeg" alt="Shubhi with Dad">
+                <p>Shubhi with Her Daddy 💖</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/happy family.jpeg" alt="Family Photo">
+                <p>Our Happy Family</p>
+            </div>
+        </div>
+        
+        <!-- Thank You Message -->
+        <div class="thank-you-section">
+            <h3>A Special Invitation from the our Family</h3>
+            <p>Dear Friends and Family,</p>
+            <p>We are excited to celebrate our little princess Shubhi's 4th birthday and would love for you to join us on this joyous occasion. Your presence will make our celebration even more special as we gather to create beautiful memories together.</p>
+            <p>Let's come together, have fun, and make this day unforgettable. We look forward to celebrating with you!</p>
+            <p>With love, <br><strong>The Singh Family</strong></p>
+        </div>
+
+        <button onclick="scrollToSection('page1')">Back to Top ⬆️</button>
+    </section>
+
+</div>
+
+<!-- Background Music -->
+<audio id="birthdaySong" loop>
+    <source src="./music/birthday song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
